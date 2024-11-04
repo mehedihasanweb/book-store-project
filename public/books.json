@@ -1,0 +1,80 @@
+[
+  {
+    "bookId": "1",
+    "bookName": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "image": "https://i.ibb.co.com/QCQrp6X/pngwing-1.png",
+    "review": "A masterful psychological thriller that keeps you guessing till the last page. The suspense builds with each chapter, making it impossible to put down.",
+    "totalPages": 336,
+    "rating": 4.6,
+    "category": "Thriller",
+    "tags": ["Psychological", "Suspense", "Mystery"],
+    "publisher": "Celadon Books",
+    "yearOfPublishing": 2019
+  },
+  {
+    "bookId": "2",
+    "bookName": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "image": "https://i.ibb.co.com/NS3Ww5n/kindpng-7318921.png",
+    "review": "A beautiful and haunting story of survival and resilience, blending mystery with an exquisite narrative on the natural world.",
+    "totalPages": 384,
+    "rating": 4.8,
+    "category": "Fiction",
+    "tags": ["Literary Fiction", "Mystery", "Romance"],
+    "publisher": "G.P. Putnam's Sons",
+    "yearOfPublishing": 2018
+  },
+  {
+    "bookId": "3",
+    "bookName": "Educated",
+    "author": "Tara Westover",
+    "image": "https://i.ibb.co.com/LDKSPPd/kindpng-4945926-1.png",
+    "review": "A remarkable memoir of one woman's journey from a survivalist family to earning a PhD from Cambridge. Profoundly inspiring and thought-provoking.",
+    "totalPages": 352,
+    "rating": 4.7,
+    "category": "Biography",
+    "tags": ["Memoir", "Inspiration", "True Story"],
+    "publisher": "Random House",
+    "yearOfPublishing": 2018
+  },
+  {
+    "bookId": "4",
+    "bookName": "Becoming",
+    "author": "Michelle Obama",
+    "image": "https://i.ibb.co.com/RQ8Ghq9/kindpng-2592315-1.png",
+    "review": "An intimate and honest look into the life of Michelle Obama, offering insight and wisdom on overcoming challenges and making a difference.",
+    "totalPages": 448,
+    "rating": 4.9,
+    "category": "Autobiography",
+    "tags": ["Inspiration", "True Story", "Politics"],
+    "publisher": "Crown Publishing Group",
+    "yearOfPublishing": 2018
+  },
+  {
+    "bookId": "5",
+    "bookName": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "image": "https://i.ibb.co.com/LRSvq3f/kindpng-5624060-1.png",
+    "review": "An enlightening exploration of human history, from the dawn of Homo sapiens to the present. Harari’s insight is engaging and thought-provoking.",
+    "totalPages": 464,
+    "rating": 4.7,
+    "category": "Non-Fiction",
+    "tags": ["History", "Anthropology", "Philosophy"],
+    "publisher": "Harper",
+    "yearOfPublishing": 2015
+  },
+  {
+    "bookId": "6",
+    "bookName": "The Night Circus",
+    "author": "Erin Morgenstern",
+    "image": "https://i.ibb.co.com/1rtY4fP/kindpng-2193744-1.png",
+    "review": "A spellbinding tale of magic and love set within an enchanting and mysterious circus. The writing is poetic and the story captivating.",
+    "totalPages": 528,
+    "rating": 4.5,
+    "category": "Fantasy",
+    "tags": ["Magic", "Romance", "Adventure"],
+    "publisher": "Doubleday",
+    "yearOfPublishing": 2011
+  }
+]
