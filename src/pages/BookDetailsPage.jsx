@@ -5,7 +5,6 @@ import { addBookToLs, addWishlistBookToLs } from "../utility/localStorage";
 const BookDetailsPage = () => {
   const book = useLoaderData();
   const { id } = useParams();
-  //   console.log(book, id);
 
   const singleBook = book?.find((book) => book.bookId === id);
   const {

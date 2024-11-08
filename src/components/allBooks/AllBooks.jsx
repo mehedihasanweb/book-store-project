@@ -10,8 +10,6 @@ const AllBooks = () => {
       .then((data) => setAllBooks(data));
   }, []);
 
-  console.log(allBooks);
-
   return (
     <div className="md:my-20">
       <h2 className="text-4xl text-center font-bold  mb-8">

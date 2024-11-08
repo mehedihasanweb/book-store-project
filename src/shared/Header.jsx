@@ -3,8 +3,25 @@ import { FaBars } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { Link, NavLink } from "react-router-dom";
 
+import { AuthContext } from "../authContextApi/AuthProvider";
+import { useContext } from "react";
+import toast from "react-hot-toast";
+
 const Header = () => {
   const [active, setActive] = useState(false);
+  const { user, LogOut } = useContext(AuthContext);
+  console.log(user);
+
+  // handle sign out
+  const handleSignOut = () => {
+    LogOut()
+      .then(() => {
+        toast.success("Sign Out Successful!!");
+      })
+      .catch(() => {
+        toast.error("Sign Out Failed!!");
+      });
+  };
 
   return (
     <div className="flex flex-col md:flex-row md:justify-between my-6">
@@ -66,12 +83,25 @@ const Header = () => {
 
       {/* Buttons */}
       <div className="flex flex-col md:flex-row md:items-center gap-3 mt-4 md:mt-0">
-        <button className="bg-[#23BE0A] px-3 py-2 text-white rounded-md w-full md:w-auto">
-          Sign In
-        </button>
-        <button className="bg-[#59C6D2] px-3 py-2 text-white rounded-md w-full md:w-auto">
-          Page to Read
-        </button>
+        {user ? (
+          <>
+            <h2 className="text-sm font-semibold">{user?.displayName}</h2>
+            <NavLink>
+              <button
+                onClick={handleSignOut}
+                className="bg-[#59C6D2] px-3 py-2 text-white rounded-md w-full md:w-auto"
+              >
+                Sign Out
+              </button>
+            </NavLink>
+          </>
+        ) : (
+          <NavLink to="/login">
+            <button className="bg-[#23BE0A] px-3 py-2 text-white rounded-md w-full md:w-auto">
+              Sign In
+            </button>
+          </NavLink>
+        )}
       </div>
     </div>
   );

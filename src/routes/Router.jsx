@@ -4,6 +4,9 @@ import Home from "../pages/Home";
 import ListedBookPage from "../pages/ListedBookPage";
 import PageToReadPage from "../pages/PageToReadPage";
 import BookDetailsPage from "../pages/BookDetailsPage";
+import PrivateRoute from "./PrivateRoute";
+import Login from "../pages/Login";
+import Register from "../pages/Register";
 
 export const router = createBrowserRouter([
   {
@@ -31,8 +34,20 @@ export const router = createBrowserRouter([
       },
       {
         path: "/bookDetails/:id",
-        element: <BookDetailsPage />,
+        element: (
+          <PrivateRoute>
+            <BookDetailsPage />
+          </PrivateRoute>
+        ),
         loader: () => fetch("/books.json"),
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
       },
     ],
   },
